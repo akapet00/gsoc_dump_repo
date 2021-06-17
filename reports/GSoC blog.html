@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>01_gsoc_blog_1106</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>GSoC blog</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -13561,10 +13561,12 @@ body.lm-mod-override-cursor .jp-OutputArea-output.jp-mod-isolated:before {
   outline: none;
   overflow: auto;
   background: var(--jp-layout-color0);
+  outline: none;
   box-sizing: border-box;
   min-width: 200px;
   max-width: 900px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .jp-Notebook.jp-mod-scrollPastEnd::after {
@@ -14264,15 +14266,15 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <center>
-    <h1> Google Summer of Code blog #1 </h1>
-    <h2>"Welcome to GSoC 2021!" </h2>
-    <img src="static/gsoc_logo.png" alt="GSoC logo">
+    <img src="static/gsoc_logo.png" alt="GSoC logo" width='120'>
+    <h1> Google Summer of Code blog</h1>
+    <hr/>
 </center>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Picture this... May 17th, late afternoon, sitting on my couch exhausted... Probably watching Netflix and stressing out how I should probably do some work on my thesis or, at least, do anything else other than be a complete slacker.
+<h2 id="1-Introduction">1 Introduction<a class="anchor-link" href="#1-Introduction">&#182;</a></h2><p>Picture this... May 17th, late afternoon, sitting on my couch exhausted... Probably watching Netflix and stressing out how I should probably do some work on my thesis or, at least, do anything else other than be a complete slacker.
 I turn on my laptop, take a look at the mail and there's a very pleasant surprise:</p>
 
 <pre><code>Hi antelk,
@@ -14284,12 +14286,13 @@ Welcome to GSoC 2021!
 We look forward to seeing the great things you will accomplish this summer with INCF.</code></pre>
 <p>I have to be honest... I did not expect to get in and I was equally thrilled and terrified.
 Still, more thrilled than terrified and I can proudly introduce myself as a 2021 GSoC student :)</p>
+<hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Project">Project<a class="anchor-link" href="#Project">&#182;</a></h2><p>I will work on the project <em>Support of the simulation-based inference with the model fitting toolbox</em> together with my mentor Marcel Stimberg and the rest of the model fitting team under the <a href="https://briansimulator.org/">Brian simulator</a> project.
+<h2 id="2-Project-synopsis">2 Project synopsis<a class="anchor-link" href="#2-Project-synopsis">&#182;</a></h2><p>I will work on the project <em>Support of the simulation-based inference with the model fitting toolbox</em> together with my mentor Marcel Stimberg and the rest of the model fitting team under the <a href="https://briansimulator.org/">Brian simulator</a> project.
 Brian is a free and open source, cross-platform simulator for biological neurons and spiking neural networks.
 It is written in the extremely efficient manner using the Python programming language and the entire code-base is available <a href="https://github.com/brian-team/brian2">on GitHub</a>.</p>
 <p><code>brian2modelfitting</code> allows a user to find the best fit unknown parameters for recorded traces and spike trains.
@@ -14303,12 +14306,13 @@ It will also expolit prior system knowledge sparsely, using only the most import
 <li>for more details on the project, see <a href="https://docs.google.com/document/d/1s1GsL4FtKL3iN_kFuQRj81vekGtTUvpVlxwkZIcd4Z8/edit#heading=h.2hzcrm8ors39">my draft proposal</a> in Google Docs;</li>
 <li>you can also track my progress through <code>brian2modelfitting</code> <a href="https://github.com/brian-team/brian2modelfitting/projects/1">project pages</a> on GitHub.</li>
 </ul>
+<hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="First-steps">First steps<a class="anchor-link" href="#First-steps">&#182;</a></h2><p>During the first period of the project, i.e., from May 17th to June 7th, all students have to participate in something called <em>Community bonding</em>, during which we are required to become familiar with the community practices and processes by actively participating on mailing lists, IRC, Gitter etc.
+<h2 id="3-First-steps">3 First steps<a class="anchor-link" href="#3-First-steps">&#182;</a></h2><p>During the first period of the project, i.e., from May 17th to June 7th, all students have to participate in something called <em>Community bonding</em>, during which we are required to become familiar with the community practices and processes by actively participating on mailing lists, IRC, Gitter etc.
 Me personaly, I waited for a couple of days to have my first virtual meeting with Marcel.
 He explained the inner workings of GSoC and the INCF (International Neuroinformatics Coordinating Facility), an international non-profit umbrella organization that embrace principles of Open, FAIR and Citable neuroscience, under which Marcel also operates for the duration of the GSoC.
 We agreed to have casual video calls each week, communicate daily via e-mail, Gitter, and Github issues, but make our best to keep the most of the communication open for the entire community through the official Brian discourse channel.</p>
@@ -14338,12 +14342,13 @@ I also went through a couple of relevant tutorials:</p>
 All issues can be tracked through the project page in the <code>brian2modelfitting</code> repository on GitHub.</li>
 </ol>
 <p>The third virtual meeting resulted in a discussion on several implementation details and a final agreement on the development of the code itself and best practices for version control.</p>
+<hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Microreport,-week-1">Microreport, week 1<a class="anchor-link" href="#Microreport,-week-1">&#182;</a></h2><h3 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h3><ul>
+<h2 id="4-Weekly-microreport">4 Weekly microreport<a class="anchor-link" href="#4-Weekly-microreport">&#182;</a></h2><h3 id="Week-1">Week 1<a class="anchor-link" href="#Week-1">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
 <li>Played with more advanced examples in <code>sbi</code> and went through the <a href="https://www.youtube.com/watch?v=cAF3UWTzX9A">Introduction to Brian</a> online workshop.</li>
 <li>Started to work on the wrapper class for first stages of simulation based inference that will ultimately allow a user to obtain posterior over the unknown parameters with a few simple lines of code, <a href="https://github.com/brian-team/brian2modelfitting/issues/44">issue #44</a>.</li>
 <li>Investigated dimensionality reduction techniques that would automatically extract the relevant features from the traces and, therefore, allow a user to avoid the process of manually extracting summary statistics used to feed a neural density estimator of choice.
@@ -14352,18 +14357,22 @@ This work is related to an <a href="https://github.com/brian-team/brian2modelfit
 <li>Found out the way to efficiently store the results from the first stages of simulation based inference that are known to be time consuming, <a href="https://github.com/brian-team/brian2modelfitting/issues/46">issue #46</a>.</li>
 <li>Had the fourth virtual meeting with Marcel where discussion on what had been done over the past week.</li>
 </ul>
-<h3 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h3><ul>
+<h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
 <li>To start on the actual implementation of the wrapper class for first stages of the simulation-based inference.</li>
 </ul>
-<h3 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h3><ul>
+<h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
 <li>Nothing for now.</li>
 </ul>
+<h3 id="Week-2">Week 2<a class="anchor-link" href="#Week-2">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><p>tba</p>
+<h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><p>tba</p>
+<h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><p>tba</p>
+<hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="References">References<a class="anchor-link" href="#References">&#182;</a></h2><p id='Cranmer2020'>Kyle  <b>Cranmer</b>, Johann Brehmer, Gilles Louppe. The frontier of simulation-based inference, Proceedings of the National Academy of Sciences Dec <b>2020</b>, 117 (48) 30055-30062; doi:10.1073/pnas.1912789117</p><p id='Gonçalves2020'>Pedro J  <b>Gonçalves</b>, Jan-Matthis Lueckmann, Michael Deistler, Marcel Nonnenmacher, Kaan Öcal, Giacomo Bassetto, Chaitanya Chintaluri, William F Podlaski, Sara A Haddad, Tim P Vogels, David S Greenberg, Jakob H Macke. Training deep neural density estimators to identify mechanistic models of neural dynamics, eLife <b>2020</b> 9:e56261; doi:10.7554/eLife.56261</p><p id='Kazemi2019'>Seyed Mehran  <b>Kazemi</b>, Rishab Goel, Sepehr Eghbali, Janahan Ramanan, Jaspreet Sahota, Sanjay Thakur, Stella Wu, Cathal Smyth, Pascal Poupart, Marcus Brubaker. Time2Vec: Learning a Vector Representation of Time, preprint <b>2019</b></p><p id='Lueckmann2021'>Jan-Matthis  <b>Lueckmann</b>, Jan Boelts, David S Greenberg, David, Pedro J Gonçalves, Jakob H Macke. Benchmarking Simulation-Based Inference. preprint <b>2021</b></p><p id='Tejero-Cantero2020'>Alvaro  <b>Tejero-Cantero</b>, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J Goncalves, David S Greenberg, Jakob H Macke. sbi: A toolkit for simulation-based inference, Journal of Open Source Software <b>2020</b>, 5. 2505; doi:10.21105/joss.02505</p>
+<h2 id="5-References">5 References<a class="anchor-link" href="#5-References">&#182;</a></h2><p id='Cranmer2020'>Kyle  <b>Cranmer</b>, Johann Brehmer, Gilles Louppe. The frontier of simulation-based inference, Proceedings of the National Academy of Sciences Dec <b>2020</b>, 117 (48) 30055-30062; doi:10.1073/pnas.1912789117</p><p id='Gonçalves2020'>Pedro J  <b>Gonçalves</b>, Jan-Matthis Lueckmann, Michael Deistler, Marcel Nonnenmacher, Kaan Öcal, Giacomo Bassetto, Chaitanya Chintaluri, William F Podlaski, Sara A Haddad, Tim P Vogels, David S Greenberg, Jakob H Macke. Training deep neural density estimators to identify mechanistic models of neural dynamics, eLife <b>2020</b> 9:e56261; doi:10.7554/eLife.56261</p><p id='Kazemi2019'>Seyed Mehran  <b>Kazemi</b>, Rishab Goel, Sepehr Eghbali, Janahan Ramanan, Jaspreet Sahota, Sanjay Thakur, Stella Wu, Cathal Smyth, Pascal Poupart, Marcus Brubaker. Time2Vec: Learning a Vector Representation of Time, preprint <b>2019</b></p><p id='Lueckmann2021'>Jan-Matthis  <b>Lueckmann</b>, Jan Boelts, David S Greenberg, David, Pedro J Gonçalves, Jakob H Macke. Benchmarking Simulation-Based Inference. preprint <b>2021</b></p><p id='Tejero-Cantero2020'>Alvaro  <b>Tejero-Cantero</b>, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J Goncalves, David S Greenberg, Jakob H Macke. sbi: A toolkit for simulation-based inference, Journal of Open Source Software <b>2020</b>, 5. 2505; doi:10.21105/joss.02505</p>
 </div>
 </div>
 </body>
