@@ -1,0 +1,10 @@
+antropy==0.1.4
+brian2==2.4.2
+brian2tools==0.2.1.1
+brian2modelfitting==0.4+git
+efel==3.1.96
+matplotlib==3.4.2
+numpy==1.20.3
+sbi==0.16.0
+scipy==1.6.3
+torch==1.8.1+cu102
