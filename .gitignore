@@ -139,3 +139,4 @@ cython_debug/
 
 # sbi-logs
 playground/sbi-logs/
+playground/*/sbi-logs/
