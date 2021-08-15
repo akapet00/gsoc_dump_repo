@@ -14467,17 +14467,22 @@ All issues can be tracked through the project page in the <code>brian2modelfitti
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
 <li>No.</li>
 </ul>
-<h3 id="Week-10,-Aug-9th-to-Aug-15th-(posted-on-Aug-14th)">Week 10, Aug 9th to Aug 15th (posted on Aug 14th)<a class="anchor-link" href="#Week-10,-Aug-9th-to-Aug-15th-(posted-on-Aug-14th)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
+<h3 id="Week-10,-Aug-9th-to-Aug-15th-(posted-on-Aug-14th,-updated-on-Aug-15th)">Week 10, Aug 9th to Aug 15th (posted on Aug 14th, updated on Aug 15th)<a class="anchor-link" href="#Week-10,-Aug-9th-to-Aug-15th-(posted-on-Aug-14th,-updated-on-Aug-15th)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
 <li>PR <a href="https://github.com/brian-team/brian2modelfitting/pull/60">#59</a> has been merged:<ul>
-<li>Resolves an issue <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> - instead of providing list of callables that are used to extract summary features out of the neural recordings, the dictionary should be provided instead. Keys are the names of the observed output variables (voltage traces, channel activations, spike trains...) as defined in the model equations, while the respective values should be lists where each element of the list is callable that returns a summary feature.</li>
+<li>Resolves the issue <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> - instead of providing list of callables that are used to extract summary features out of the neural recordings, the dictionary should be provided instead. Keys are the names of the observed output variables (voltage traces, channel activations, spike trains...) as defined in the model equations, while the respective values should be lists where each element of the list is callable that returns a summary feature.</li>
 <li>New examples are added.</li>
 </ul>
 </li>
 <li>PR <a href="https://github.com/brian-team/brian2modelfitting/pull/60">#60</a> has been merged:<ul>
-<li>Resolved an issue <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a> - spikes are now handled as any other output variable.</li>
+<li>Resolves the issue <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a> - spikes are now handled as any other output variable.</li>
 <li>Updated docstrings.</li>
 <li>Errors fixed.</li>
 <li>Improved user input handling.</li>
+</ul>
+</li>
+<li>PR <a href="https://github.com/brian-team/brian2modelfitting/pull/61">#61</a> has been merged:<ul>
+<li>Resolves the issue <a href="https://github.com/brian-team/brian2modelfitting/issues/62">#62</a> - training of the neural density estimator is now possible using GPU.</li>
+<li>Updated docstrings.</li>
 </ul>
 </li>
 <li>Wraped up all the work regarding the code: all examples are updated to the current state of the <code>Inferencer</code> API.</li>
