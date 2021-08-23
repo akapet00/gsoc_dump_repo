@@ -14264,16 +14264,29 @@
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <center>
-    <img src="static/gsoc_blog/gsoc_logo.png" alt="GSoC logo" width='120'>
-    <h1> Google Summer of Code blog</h1>
+    <img src="https://user-images.githubusercontent.com/17547288/63650185-2d1da100-c748-11e9-9cd8-87caa3ee4716.png" alt="GSoC logo" width='500'/>
+    <h1>Journal</h1>
     <hr/>
 </center>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="1.-Introduction">1. Introduction<a class="anchor-link" href="#1.-Introduction">&#182;</a></h2><p>Picture this... May 17th, late afternoon, sitting on my couch exhausted... Probably watching Netflix and stressing out how I should probably do some work on my thesis or, at least, do anything else other than be a complete slacker.
-I turn on my laptop, take a look at the mail and there's a very pleasant surprise:</p>
+<h2 id="Table-of-contents">Table of contents<a class="anchor-link" href="#Table-of-contents">&#182;</a></h2><ol>
+<li><a href="#1.-Introduction">Introduction</a></li>
+<li><a href="#2.-Project-synopsis">Project synopsis</a></li>
+<li><a href="#3.-First-steps">First steps</a></li>
+<li><a href="#4.-Weekly-reports">Weekly reports</a></li>
+<li><a href="#5.-Conclusion">Conclusion</a></li>
+<li><a href="#6.-References">References</a></li>
+</ol>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="1.-Introduction">1. Introduction<a class="anchor-link" href="#1.-Introduction">&#182;</a></h2><p>Picture this... May 17th, late afternoon, sitting on my couch exhausted... Probably watching Netflix and stressing out how I should do some work on my thesis or, at least, do anything else other than be a complete slacker.</p>
+<p>I turn on my laptop, take a look at the mail and there's a very pleasant surprise:</p>
 
 <pre><code>Hi antelk,
 
@@ -14282,7 +14295,7 @@ Your proposal Support of the simulation-based inference with the model fitting t
 Welcome to GSoC 2021!
 
 We look forward to seeing the great things you will accomplish this summer with INCF.</code></pre>
-<p>I have to be honest... I did not expect to get in and I was equally thrilled and terrified.
+<p>I have to be honest... I did not expect to get in, and I was equally thrilled and terrified.
 Still, more thrilled than terrified and I can proudly introduce myself as a 2021 GSoC student :)</p>
 <hr>
 
@@ -14292,17 +14305,17 @@ Still, more thrilled than terrified and I can proudly introduce myself as a 2021
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="2.-Project-synopsis">2. Project synopsis<a class="anchor-link" href="#2.-Project-synopsis">&#182;</a></h2><p>I will work on the project <em>Support of the simulation-based inference with the model fitting toolbox</em> together with my mentor Marcel Stimberg and the rest of the model fitting team under the <a href="https://briansimulator.org/">Brian simulator</a> project.
 Brian is a free and open source, cross-platform simulator for biological neurons and spiking neural networks.
-It is written in the extremely efficient manner using the Python programming language and the entire code-base is available <a href="https://github.com/brian-team/brian2">on GitHub</a>.</p>
-<p><code>brian2modelfitting</code> allows a user to find the best fit unknown parameters for recorded traces and spike trains.
+It is written in the extremely efficient manner using the Python programming language and the entire code-base is open sourced and available <a href="https://github.com/brian-team/brian2">on GitHub</a>.</p>
+<p><code>brian2modelfitting</code> toolbox allows the user to find the best fit unknown parameters for recorded traces and spike trains.
 The focus of my project is the integration of the <code>sbi</code> library into the <code>brian2modelfitting</code> toolbox to extend currently implemented fitting capabilities for custom excitable single cell models with simulation-based inference techniques.
 This will enable <code>brian2modelfitting</code> to not only result in a single set of optimal parameters, rather in the full posterior distribution over parameters.
 It will also expolit prior system knowledge sparsely, using only the most important features to identify mechanistic models which are consistent with the measured data by means of recorded traces and spike trains.
-<code>sbi</code> library is a completely separate effort and its development is coordinated at the <a href="https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/research/research/cluster-research-groups/professorships/machine-learning-in-science/">mackelab</a>.</p>
+<code>sbi</code> library is a completely separate effort and its development is coordinated at <a href="https://www.mackelab.org/">the Macke lab</a>.</p>
 <p>Relevant URLs:</p>
 <ul>
-<li><a href="https://summerofcode.withgoogle.com/projects/#4982864942202880">summary of the project</a>;</li>
-<li>for more details on the project, see <a href="https://docs.google.com/document/d/1s1GsL4FtKL3iN_kFuQRj81vekGtTUvpVlxwkZIcd4Z8/edit#heading=h.2hzcrm8ors39">my draft proposal</a> in Google Docs;</li>
-<li>you can also track my progress through <code>brian2modelfitting</code> <a href="https://github.com/brian-team/brian2modelfitting/projects/1">project pages</a> on GitHub.</li>
+<li>official summary of the project is available <a href="https://summerofcode.withgoogle.com/projects/#4982864942202880">here</a>;</li>
+<li>for detailed overview of the project, go check <a href="https://docs.google.com/document/d/1s1GsL4FtKL3iN_kFuQRj81vekGtTUvpVlxwkZIcd4Z8/edit#heading=h.2hzcrm8ors39">my draft proposal</a>;</li>
+<li>my progress can also be tracked via <code>brian2modelfitting</code> <a href="https://github.com/brian-team/brian2modelfitting/projects/1">project pages</a> on GitHub.</li>
 </ul>
 <hr>
 
@@ -14310,7 +14323,7 @@ It will also expolit prior system knowledge sparsely, using only the most import
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="3.-First-steps">3. First steps<a class="anchor-link" href="#3.-First-steps">&#182;</a></h2><p>During the first period of the project, i.e., from May 17th to June 7th, all students have to participate in something called <em>Community bonding</em>, during which we are required to become familiar with the community practices and processes by actively participating on mailing lists, IRC, Gitter etc.
+<h2 id="3.-First-steps">3. First steps<a class="anchor-link" href="#3.-First-steps">&#182;</a></h2><p>During the first period of the project, i.e., from May 17th to June 7th, all students have to participate in something called <em>Community bonding</em>, during which we are required to become familiar with the community practices and processes by actively participating on mailing lists, IRC, Gitter, etc.
 Me personaly, I waited for a couple of days to have my first virtual meeting with Marcel.
 He explained the inner workings of GSoC and the INCF (International Neuroinformatics Coordinating Facility), an international non-profit umbrella organization that embrace principles of Open, FAIR and Citable neuroscience, under which Marcel also operates for the duration of the GSoC.
 We agreed to have casual video calls each week, communicate daily via e-mail, Gitter, and Github issues, but make our best to keep the most of the communication open for the entire community through the official Brian discourse channel.</p>
@@ -14318,7 +14331,7 @@ We agreed to have casual video calls each week, communicate daily via e-mail, Gi
 I also went through a couple of relevant tutorials:</p>
 <ul>
 <li><a href="https://brian2.readthedocs.io/en/stable/resources/tutorials/index.html">official <code>brian2</code> online tutorials</a>;</li>
-<li><a href="https://github.com/brian-team/brian2modelfitting/tree/master/examples">examples</a> on <code>brian2modelfitting</code> GitHub page;</li>
+<li><a href="https://github.com/brian-team/brian2modelfitting/tree/master/examples">examples</a> for <code>brian2modelfitting</code>;</li>
 <li><a href="https://www.mackelab.org/sbi/">all tutorials and examples</a> that are offered from <code>sbi</code> development team.</li>
 </ul>
 <p>I read a couple of recent papers that cover the simulation based inference:</p>
@@ -14337,7 +14350,7 @@ I also went through a couple of relevant tutorials:</p>
 <ol>
 <li>installing all dependencies for the future work and creating a development environment;</li>
 <li>opening issues on GitHub that would closely resamble tasks for the first coding phase, i.e., from June 7th up to Phase 1 evaluations scheduled on July 12th.
-All issues can be tracked through the project page in the <code>brian2modelfitting</code> repository on GitHub.</li>
+All issues can be tracked through the project pages in the <code>brian2modelfitting</code> repository on GitHub.</li>
 </ol>
 <p>The third virtual meeting resulted in a discussion on several implementation details and a final agreement on the development of the code itself and best practices for version control.</p>
 <hr>
@@ -14346,40 +14359,45 @@ All issues can be tracked through the project page in the <code>brian2modelfitti
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4.-Weekly-microreports">4. Weekly microreports<a class="anchor-link" href="#4.-Weekly-microreports">&#182;</a></h2><h3 id="Week-1,-Jun-7th-to-June-13th-(posted-on-June-11th)">Week 1, Jun 7th to June 13th (posted on June 11th)<a class="anchor-link" href="#Week-1,-Jun-7th-to-June-13th-(posted-on-June-11th)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
+<h2 id="4.-Weekly-reports">4. Weekly reports<a class="anchor-link" href="#4.-Weekly-reports">&#182;</a></h2><h3 id="Week-1">Week 1<a class="anchor-link" href="#Week-1">&#182;</a></h3><p><strong>Jun 7th to June 13th (posted on June 11th)</strong></p>
+<h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
 <li>Played with more advanced examples in <code>sbi</code> and went through the <a href="https://www.youtube.com/watch?v=cAF3UWTzX9A">Introduction to Brian</a> online workshop.</li>
-<li>Started to work on the wrapper class for first stages of simulation-based inference that will ultimately allow the user to obtain posterior over the unknown parameters with a few simple lines of code, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/44">#44</a>.</li>
-<li>Investigated dimensionality reduction techniques that automatically extract the relevant features from the traces and, therefore, allow the user to avoid the process of manually extracting summary statistics used to feed a neural density estimator of choice. I brushed up my knowledge on dimensionality reduction by going through the last year's Neuromatch Academy tutorial on the topic and then researched stete-of-the-art methods, specifically Time2Vec neural network embedding that provides a model-agnostic vector representation for time by Kazemi et al. [<a href="#Kazemi2019">2019</a>]. This is related to issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a>.</li>
-<li>Found out the way to efficiently store the results from the first stages of simulation based inference that are known to be time consuming, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/46">#46</a>.</li>
+<li>Started to work on the wrapper class for the first stages of simulation-based inference that will ultimately allow the user to obtain posterior over the unknown parameters with a few simple lines of code. This is related to issue <a href="https://github.com/brian-team/brian2modelfitting/issues/44">#44</a>.</li>
+<li>Investigated dimensionality reduction techniques that automatically extract the relevant features from the traces and, therefore, allow the user to avoid the process of manually extracting summary statistics used to feed a neural density estimator of choice. I brushed up my knowledge on dimensionality reduction by going through the last year's Neuromatch Academy tutorial on the topic and then researched state-of-the-art methods, specifically Time2Vec reccunt reneural network that provides a model-agnostic vector representation for time, Kazemi et al. [<a href="#Kazemi2019">2019</a>]. This is related to issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a>.</li>
+<li>Found out the way to efficiently store the results from the first stages of simulation based inference that are known to be time consuming. Related to issue <a href="https://github.com/brian-team/brian2modelfitting/issues/46">#46</a>.</li>
 <li>Had the fourth virtual meeting with Marcel.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
-<li>To start on the actual implementation of the wrapper class for first stages of the simulation-based inference.</li>
+<li>To start with the actual implementation of the wrapper class for the first stages of the simulation-based inference.</li>
 </ul>
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
 <li>Nothing for now.</li>
 </ul>
 <h3 id="Week-2,-Jun-14th-to-June-20th-(posted-on-June-18th)">Week 2, Jun 14th to June 20th (posted on June 18th)<a class="anchor-link" href="#Week-2,-Jun-14th-to-June-20th-(posted-on-June-18th)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
-<li>Made progress with wrapper class for <code>sbi</code>, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/44">#44</a>. All the work that has been done w.r.t. this issue can be tracked <a href="https://github.com/brian-team/brian2modelfitting/tree/add_sbi_wrapper_class">here</a>.</li>
-<li>Had a virtual meeting with Marcel where we discussed the implementation details of the feature metric by using <code>eFEL</code> library, currently in use in <code>brian2modelfitting</code> toolbox.</li>
-<li>While learning on feature extraction from electrophysiological data traces, I read the paper by Bandt and Pope [<a href="#Bandt2002">2002</a>], in which the authors propose permutation entropy as the simple, light-weight and robust measure of complexity for time series data, as such perfect for the voltage traces we deal with.</li>
+<li>Made progress with wrapper class for <code>sbi</code>, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/44">#44</a>.</li>
+<li>Had a virtual meeting with Marcel where we discussed the implementation details of the feature metric by utilizing <code>eFEL</code> library, or any other library for that matter, currently in use in <code>brian2modelfitting</code> toolbox.</li>
+<li>Read the paper by Bandt and Pope [<a href="#Bandt2002">2002</a>], in which the authors propose permutation entropy as the simple, light-weight and robust measure of complexity for time series data, as such perfect for the voltage traces we deal with.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
-<li>I plan to finish the initial version of the wrapper class for first stages of the simulation-based inference, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/44">#44</a>.</li>
-<li>To start working on issue <a href="https://github.com/brian-team/brian2modelfitting/issues/46">#46</a>, that deal with loading and storing simulated data traces, and issue <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a>, that deals with updating and restructuring the feature metric class.</li>
+<li>To finish the initial version of the wrapper class for first stages of the simulation-based inference, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/44">#44</a>.</li>
+<li>To start working on issue <a href="https://github.com/brian-team/brian2modelfitting/issues/46">#46</a>, that deal with loading and storing simulated data traces, and issue <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a>, that deals with updating and restructuring of the feature metric class.</li>
 </ul>
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
 <li>Currently, no. However, I planned to do things a bit faster.</li>
 </ul>
 <h3 id="Week-3,-Jun-21th-to-June-27th-(posted-on-June-25th)">Week 3, Jun 21th to June 27th (posted on June 25th)<a class="anchor-link" href="#Week-3,-Jun-21th-to-June-27th-(posted-on-June-25th)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
-<li>I did a research on potential techniques of extracting summary features from electrophysiological recordings. I found out interesting package called <code>antropy</code> that provides multiple time-efficient algorithms for computing the complexity of time-series. Decided to try it out on the example of simulated voltage traces from the Hodgkin-Huxley neuron model and proposed a pull request where the correlation between entropy metrices for voltage traces is showcased. <a href="https://github.com/raphaelvallat/antropy/blob/master/notebooks/complexity_corr_membrane_potential.ipynb">My example</a> has been merged to the master branch of <code>antropy</code> repository, and is now available as the official example :)</li>
-<li>Finished the first version of wrapper class that will allow the user to perform the simulation-based inference through the model fitting toolbox.</li>
-<li>Pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/49">#49</a> that resolves issues <a href="https://github.com/brian-team/brian2modelfitting/issues/44">#44</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/50">#50</a> has been merged.</li>
-<li>Had a virtual meeting with Marcel where we had a discussion on the best way to load and store simulated results and the trained neural density estimator to be reused for either new experiments with the same cell or entierely different excitable cells.</li>
-<li>Summary of the progress and to-do list are available in <a href="https://github.com/brian-team/brian2modelfitting/projects/1">Projects section</a> of <code>brian2modelfitting</code></li>
+<li>Did a research on potential techniques of extracting summary features from electrophysiological recordings. I found out interesting package called <code>antropy</code> that provides multiple time-efficient algorithms for computing the complexity of time-series. Decided to try it out on the example of simulated voltage traces from the Hodgkin-Huxley neuron model and proposed a pull request where the correlation between entropy metrices for voltage traces is showcased. <a href="https://github.com/raphaelvallat/antropy/blob/master/notebooks/complexity_corr_membrane_potential.ipynb">My example</a> has been merged to the master branch of <code>antropy</code> repository, and is now available as the official example :)</li>
+<li>Finished the first version of the wrapper class that will allow the user to perform the simulation-based inference through the model fitting toolbox.</li>
+<li>Got my pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/49">#49</a> merged:<ul>
+<li>resolved issue <a href="https://github.com/brian-team/brian2modelfitting/issues/44">#44</a> - wrapper class for <code>sbi</code>,</li>
+<li>and issue <a href="https://github.com/brian-team/brian2modelfitting/issues/50">#50</a> - support of all inference techniques.</li>
+</ul>
+</li>
+<li>Had a virtual meeting with Marcel where we had a discussion on the best way to load and store simulated results and the trained neural density estimator to be reused for either new experiments with the same cell or entierely different excitable cells. This is related to issue <a href="https://github.com/brian-team/brian2modelfitting/issues/46">#46</a>.</li>
+<li>Summary of the progress and to-do list are available in <a href="https://github.com/brian-team/brian2modelfitting/projects/1">Project pages</a> in the <code>brian2modelfitting</code> repository on GitHub.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
-<li>Resolve issue <a href="https://github.com/brian-team/brian2modelfitting/issues/46">#46</a> and propose a new pull request.</li>
+<li>To resolve issue <a href="https://github.com/brian-team/brian2modelfitting/issues/46">#46</a>.</li>
 <li>Investigate additional visualization techniques of the parameter space, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a>.</li>
 </ul>
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
@@ -14387,16 +14405,16 @@ All issues can be tracked through the project page in the <code>brian2modelfitti
 </ul>
 <h3 id="Week-4,-Jun-28th-to-Jul-4th-(posted-on-Jul-2nd)">Week 4, Jun 28th to Jul 4th (posted on Jul 2nd)<a class="anchor-link" href="#Week-4,-Jun-28th-to-Jul-4th-(posted-on-Jul-2nd)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
 <li>Resolved issue <a href="https://github.com/brian-team/brian2modelfitting/issues/46">#46</a> and proposed a new pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a>.</li>
-<li>Read the paper on automatic fitting of spiking neuron models to electrophysiological recordings by Rossant et al. [<a href="#Rossant2010">2010</a>] as the first step into better understanding of the rest of model fitting toolbox and fitting methods that are utilized throughout. Namely, during the weekly meeting with Marcel, the idea was mentioned that the <code>Inference</code> and <code>Fitter</code> classes could potentially be refactorized in a way that they have a common superclass.</li>
-<li>Had a weekly meeting with Marcel where we discuss mostly the changes that needs to be done in pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a> regarding the storing and loading of the generated data.</li>
+<li>Read the paper on automatic fitting of spiking neuron models to electrophysiological recordings by Rossant et al. [<a href="#Rossant2010">2010</a>] as the first step into better understanding of the rest of model fitting toolbox and fitting methods that are utilized throughout. Namely, during the weekly meeting with Marcel, the idea mentioned was that the <code>Inference</code> and <code>Fitter</code> classes could potentially be refactorized in a way that they have a common superclass.</li>
+<li>Had a weekly meeting with Marcel where we mostly discussed the changes that have to be done in pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a> regarding the storing and loading of the generated data.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
 <li>Update pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a>.</li>
-<li>Code refactoring.</li>
-<li>Start the initial work on issue <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a>.</li>
+<li>Some code refactoring.</li>
+<li>Start the initial work on issue <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a> that deals with large-scale simulations.</li>
 </ul>
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
-<li>Was fighting a few bugs duing the first part of the week that were resolved by Marcel on our weekly meeting.</li>
+<li>Was fighting a few bugs during the first part of the week that were resolved by Marcel on our weekly meeting.</li>
 </ul>
 <h3 id="Week-5,-Jul-5th-to-Jul-11th-(posted-on-Jul-9th)">Week 5, Jul 5th to Jul 11th (posted on Jul 9th)<a class="anchor-link" href="#Week-5,-Jul-5th-to-Jul-11th-(posted-on-Jul-9th)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
 <li>Did a few updates on a pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a>, mostly refactoring and some fixes.</li>
@@ -14404,7 +14422,7 @@ All issues can be tracked through the project page in the <code>brian2modelfitti
 <li>Had a virtual meeting with Marcel where we had a discussion on future work, mostly regarding additional working examples and tests.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
-<li>Finalize all the work that has to be done with regards to the pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a>.</li>
+<li>Finalize all the work that has to be done with regards to pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a>.</li>
 <li>Adjust the example on how to use <code>brian2</code> with <code>sbi</code> in the official advanced section of <code>brian2</code> examples, available <a href="https://github.com/brian-team/brian2/blob/master/examples/advanced/modelfitting_sbi.py">here</a>, to the current API of the model fitting toolbox.</li>
 <li>Create an example where it is shown how to deal with issue <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a>.</li>
 <li>Start to work on documenting the project.</li>
@@ -14413,55 +14431,56 @@ All issues can be tracked through the project page in the <code>brian2modelfitti
 <li>During the beginning of this week I was slowed down due to work commitments that took up most of my time.</li>
 </ul>
 <h3 id="Week-6,-Jul-12th-to-Jul-18th-(posted-on-Jul-16th)">Week 6, Jul 12th to Jul 18th (posted on Jul 16th)<a class="anchor-link" href="#Week-6,-Jul-12th-to-Jul-18th-(posted-on-Jul-16th)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
-<li>I had a pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a> merged into the <code>sbi_support</code> branch.</li>
+<li>Had a pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/52">#52</a> finally merged into the <code>sbi_support</code> branch.</li>
 <li>Had a virtual meeting with Marcel where the rest of the work for the project is defined:<ul>
 <li>Additional visualization exploration of sampled posterior distribution of unknown parameters, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a></li>
-<li>Supporting multiple output variables to be observed when inferencing is performed, issues <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a></li>
-<li>Additional refactoring of <code>Inferencer</code> class, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/57">#57</a></li>
+<li>Supporting multiple output variables to be observed when the inference is performed, issues <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a></li>
+<li>Additional refactoring of the <code>Inferencer</code> class, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/57">#57</a></li>
 <li>Start with tests and docs, issues <a href="https://github.com/brian-team/brian2modelfitting/issues/56">#56</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/55">#55</a>, respectively.</li>
 </ul>
 </li>
-<li>Have been working on issues <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a>, <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a></li>
+<li>Had some work done with regards to issues <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a>, <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a>.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
-<li>Solve issues <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a></li>
-<li>Continue my work on the example on how to use <code>brian2</code> with <code>sbi</code> in the official advanced section of <code>brian2</code> examples, available <a href="https://github.com/brian-team/brian2/blob/master/examples/advanced/modelfitting_sbi.py">here</a>, to the current API of the model fitting toolbox.</li>
+<li>Solve issues <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a>.</li>
+<li>Continued my work on the example on how to use <code>brian2</code> with <code>sbi</code> in the official advanced section of <code>brian2</code> examples, available <a href="https://github.com/brian-team/brian2/blob/master/examples/advanced/modelfitting_sbi.py">here</a>, to the current API of the model fitting toolbox.</li>
 </ul>
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
 <li>Not at this point.</li>
 </ul>
 <h3 id="Week-7,-Jul-19th-to-Jul-25th-(posted-on-Jul-23rd)">Week 7, Jul 19th to Jul 25th (posted on Jul 23rd)<a class="anchor-link" href="#Week-7,-Jul-19th-to-Jul-25th-(posted-on-Jul-23rd)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
-<li>Resolved issues <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a>, some additional minor changes are requested for issuse <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a> from Marcel in pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/58">#58</a>, which should be done by the end of this week</li>
-<li>Continue discussion on issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a> with <code>sbi</code> developers, this issue should be resolved by the end of this week</li>
+<li>Resolved issues <a href="https://github.com/brian-team/brian2modelfitting/issues/47">#47</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a>, that deal with large-scale simuations handling and visualization of the posterior, respectively.</li>
+<li>Proposed pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/58">#58</a> that resolves issue <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a>.</li>
+<li>Continued discussion on issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a> with <code>sbi</code> developers, this issue should be resolved by the end of this week</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
-<li>Continue the work on previously outlined pull request and continue research on dimensionality reduction, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a>, it these issues are not resolved by the end of this week</li>
-<li>Add multiple output inference support and support spikes as the output variable in issues <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a>, respectively.</li>
+<li>Continue the work on proposed pull request due, and continue research on dimensionality reduction, issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a>.</li>
+<li>Add multiple output inference support and support of spikes as the output variable as defined in issues <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a>, respectively.</li>
 </ul>
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
 <li>No.</li>
 </ul>
 <h3 id="Week-8,-Jul-26th-to-Aug-1st-(posted-on-Aug-2nd)">Week 8, Jul 26th to Aug 1st (posted on Aug 2nd)<a class="anchor-link" href="#Week-8,-Jul-26th-to-Aug-1st-(posted-on-Aug-2nd)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
-<li>Finilized the work on dimensionality reduction. The issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a> should be close together with issues <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a> in the same pull request.</li>
+<li>Finilized the work on dimensionality reduction. The issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a> should be closed together with issues <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> and <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a> in the same pull request.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
-<li>Continue the work from last week. Should get up to speed because I did virtually no new work this week due to health issues.</li>
+<li>Continue the work from last week. Should get up to speed because I did virtually no work this week due to health issues.</li>
 </ul>
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
-<li>Health issues in the first part of the week. Also few bugs that slowed down any possible progress that should be resolved this week. I have been on a short trip during the weekend.</li>
+<li>Health issues in the first part of the week. Also few bugs that slowed down any possible progress that should be resolved by the end of this week. I also took a short break durring the weekend.</li>
 </ul>
 <h3 id="Week-9,-Aug-1st-to-Aug-8th-(posted-on-Aug-7th)">Week 9, Aug 1st to Aug 8th (posted on Aug 7th)<a class="anchor-link" href="#Week-9,-Aug-1st-to-Aug-8th-(posted-on-Aug-7th)">&#182;</a></h3><h4 id="What-have-I-get-done-this-week?">What have I get done this week?<a class="anchor-link" href="#What-have-I-get-done-this-week?">&#182;</a></h4><ul>
 <li>PR <a href="https://github.com/brian-team/brian2modelfitting/pull/58">#58</a> has been merged:<ul>
-<li>Resolved issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a> - the user is able to pass empty list of parameters and <code>brian2modelfitting</code> will by default turn on <code>sbi</code> automatic feature extraction.</li>
-<li>Resolved issue <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a> - the user can investigate posterior distribution in more detail by using conditional pair plotting and computing conditional correlation matrix.</li>
+<li>Resolved issue <a href="https://github.com/brian-team/brian2modelfitting/issues/45">#45</a> - the user is able to pass empty list of parameters and <code>brian2modelfitting</code> will by default turn on <code>sbi</code> automatic feature extraction</li>
+<li>Resolved issue <a href="https://github.com/brian-team/brian2modelfitting/issues/51">#51</a> - the user can investigate posterior distribution in more detail by using conditional pair plotting and computing conditional correlation matrix</li>
 </ul>
 </li>
 <li>Proposed PR <a href="https://github.com/brian-team/brian2modelfitting/pull/59">#59</a> that resolves issue <a href="https://github.com/brian-team/brian2modelfitting/issues/53">#53</a> - instead of list of callables, where each element of the list is used to extract single feature from the trace, the user is able to pass a dictionary mapping each output variable name to a list of features. This PR also resolves issue <a href="https://github.com/brian-team/brian2modelfitting/issues/48">#48</a> as described in my comment <a href="https://github.com/brian-team/brian2modelfitting/issues/48#issuecomment-894657072">here</a>.</li>
-<li>Started initial work to support spikes in <code>Inferencer</code> class.</li>
+<li>Started initial work to support spikes in the <code>Inferencer</code> class.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
 <li>Solve issue <a href="https://github.com/brian-team/brian2modelfitting/issues/54">#54</a> that will enable the support of spikes for <code>sbi</code>.</li>
-<li>Refactor Inferencer and Fitter class.</li>
+<li>Consider refactoring of the <code>Inferencer</code> and <code>Fitter</code> class.</li>
 <li>Wrap up all the work: create a comprehensive example that will be a part of documentation, compile docs and start the initial work on tests.</li>
 </ul>
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
@@ -14485,10 +14504,10 @@ All issues can be tracked through the project page in the <code>brian2modelfitti
 <li>Updated docstrings.</li>
 </ul>
 </li>
-<li>Wraped up all the work regarding the code: all examples are updated to the current state of the <code>Inferencer</code> API.</li>
-<li>Started with documentation which is, for now, available at <a href="https://brian2modelfitting.readthedocs.io/en/sbi_support/">https://brian2modelfitting.readthedocs.io/en/sbi_support/</a>, but is the subject of constant changes.</li>
+<li>Wraped up all the work regarding the code: all examples are updated to the current state of the API.</li>
+<li>Started with documentation which is, for now, available at <a href="https://brian2modelfitting.readthedocs.io/en/sbi_support/">https://brian2modelfitting.readthedocs.io/en/sbi_support/</a>, and is the subject of constant changes.</li>
 <li>Provided Marcel with the entire code.</li>
-<li>Current state of the <code>sbi</code> integration into the <code>brian2modelfitting</code> is available in the <a href="https://github.com/brian-team/brian2modelfitting/projects/1">projects section</a> of the <code>brian2modelfitting</code> GitHub.</li>
+<li>Current state of the <code>sbi</code> integration into the <code>brian2modelfitting</code> is available in the <a href="https://github.com/brian-team/brian2modelfitting/projects/1">Project pages</a> in the <code>brian2modelfitting</code> GitHub repository.</li>
 </ul>
 <h4 id="What-am-I-planning-to-do-next-week?">What am I planning to do next week?<a class="anchor-link" href="#What-am-I-planning-to-do-next-week?">&#182;</a></h4><ul>
 <li>Write up the documentation which will be available at <a href="https://brian2modelfitting.readthedocs.io/en/sbi_support/">https://brian2modelfitting.readthedocs.io/en/sbi_support/</a> untill the branch <code>sbi_support</code> is merged to the master branch. After the merge, the full documentation will be available at <a href="https://brian2modelfitting.readthedocs.io">https://brian2modelfitting.readthedocs.io</a>.</li>
@@ -14497,13 +14516,24 @@ All issues can be tracked through the project page in the <code>brian2modelfitti
 <h4 id="Is-anything-blocking-my-progress?">Is anything blocking my progress?<a class="anchor-link" href="#Is-anything-blocking-my-progress?">&#182;</a></h4><ul>
 <li>No.</li>
 </ul>
+<h3 id="Final-Week,-Aug-16th-to-Aug-22nd-(posted-on-Aug-23rd)">Final Week, Aug 16th to Aug 22nd (posted on Aug 23rd)<a class="anchor-link" href="#Final-Week,-Aug-16th-to-Aug-22nd-(posted-on-Aug-23rd)">&#182;</a></h3><p>I did some final work on the documentation and created a comprehensive tutorial on how to perform simulation-based inference by using <code>brian2modelfittin</code>. I also did some smaller changes in the code while testing and writing documentation. Finally, I proposed the last pull request for this project. The pull request <a href="https://github.com/brian-team/brian2modelfitting/pull/64">#60</a> summarizes all the work done during the (GSoC) 2021 and it serves as a final work product that is used for the second round of evaluations.</p>
 <hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="5.-References">5. References<a class="anchor-link" href="#5.-References">&#182;</a></h2><p id='Bandt2002'>Christoph <b>Bandt</b>, Bernd Pompe. Permutation entropy: A natural complexity measure for time series, Physical Review Letters <b>2002</b>, 88, 174102; doi:10.1103/physrevlett.88.174102</p><p id='Cranmer2020'>Kyle  <b>Cranmer</b>, Johann Brehmer, Gilles Louppe. The frontier of simulation-based inference, Proceedings of the National Academy of Sciences Dec <b>2020</b>, 117 (48) 30055-30062; doi:10.1073/pnas.1912789117</p><p id='Gonçalves2020'>Pedro J  <b>Gonçalves</b>, Jan-Matthis Lueckmann, Michael Deistler, Marcel Nonnenmacher, Kaan Öcal, Giacomo Bassetto, Chaitanya Chintaluri, William F Podlaski, Sara A Haddad, Tim P Vogels, David S Greenberg, Jakob H Macke. Training deep neural density estimators to identify mechanistic models of neural dynamics, eLife <b>2020</b> 9:e56261; doi:10.7554/eLife.56261</p><p id='Kazemi2019'>Seyed Mehran  <b>Kazemi</b>, Rishab Goel, Sepehr Eghbali, Janahan Ramanan, Jaspreet Sahota, Sanjay Thakur, Stella Wu, Cathal Smyth, Pascal Poupart, Marcus Brubaker. Time2Vec: Learning a Vector Representation of Time, preprint <b>2019</b></p><p id='Lueckmann2021'>Jan-Matthis  <b>Lueckmann</b>, Jan Boelts, David S Greenberg, David, Pedro J Gonçalves, Jakob H Macke. Benchmarking Simulation-Based Inference. preprint <b>2021</b></p><p id='Rossant2010'>Cyrille <b>Rossant</b>, Dan F. M. Goodman, Jonathan Platkiewicz and Romain Brette. Automatic fitting of spiking neuron models to electrophysiological recordings, Frontiers in Neuroinformatics <b>2010</b>, 4; doi:10.3389/neuro.11.002.2010</p><p id='Tejero-Cantero2020'>Alvaro  <b>Tejero-Cantero</b>, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J Goncalves, David S Greenberg, Jakob H Macke. sbi: A toolkit for simulation-based inference, Journal of Open Source Software <b>2020</b>, 5. 2505; doi:10.21105/joss.02505</p>
+<h2 id="5.-Conclusion">5. Conclusion<a class="anchor-link" href="#5.-Conclusion">&#182;</a></h2><p>Tl;dr: the GSoC was great... <strong>hard</strong>, but great!</p>
+<p>Considering my original project plan, I would say that I satisfied all features that Marcel and I agreed on during the initial stage of the project itself. The only thing I would do differently is to start with tests earlier.</p>
+<p>It was definitely not easy to balance obligations at the university, health problems that can happen (and that happened to me during this project) and respecting deadlines and requirements defined together with the mentor. However, this was a great experience and I would do it again. Work habits, speed of learning of new, foreign concepts, programming skills... all of this, at least in my case, has improved exponentially. In addition, my communication skills, especially as a non-native English speaker, have improved - I have become more confident when addressing, often extremely big names in this area. Of course, the knowledge I gained, which spilled over from my field of computational electromagnetism to computational neuroscience, helped me broaden my horizons and think about how to apply the newly acquired skills to my own research.</p>
+<p>So my advice to any potential 2022 GSoC student is: do not hesitate to sign up, do not hesitate to get in touch with anyone who can help you to become a GSoC student, be a good person, and do what you love and do your best. Note that the GSoC can be very hard, sometimes extremely stressful, but it all pays off once you submit the last pull request :)</p>
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="6.-References">6. References<a class="anchor-link" href="#6.-References">&#182;</a></h2><p id='Bandt2002'>Christoph <b>Bandt</b>, Bernd Pompe. Permutation entropy: A natural complexity measure for time series, Physical Review Letters <b>2002</b>, 88, 174102; doi: <a href="https://doi.org/10.1103/physrevlett.88.174102">10.1103/physrevlett.88.174102</a></p><p id='Cranmer2020'>Kyle  <b>Cranmer</b>, Johann Brehmer, Gilles Louppe. The frontier of simulation-based inference, Proceedings of the National Academy of Sciences Dec <b>2020</b>, 117 (48) 30055-30062; doi: <a href="https://doi.org/10.1073/pnas.1912789117">10.1073/pnas.1912789117</a></p><p id='Gonçalves2020'>Pedro J  <b>Gonçalves</b>, Jan-Matthis Lueckmann, Michael Deistler, Marcel Nonnenmacher, Kaan Öcal, Giacomo Bassetto, Chaitanya Chintaluri, William F Podlaski, Sara A Haddad, Tim P Vogels, David S Greenberg, Jakob H Macke. Training deep neural density estimators to identify mechanistic models of neural dynamics, eLife <b>2020</b> 9:e56261; doi: <a href="https://doi.org/10.7554/eLife.56261">10.7554/eLife.56261</a></p><p id='Kazemi2019'>Seyed Mehran  <b>Kazemi</b>, Rishab Goel, Sepehr Eghbali, Janahan Ramanan, Jaspreet Sahota, Sanjay Thakur, Stella Wu, Cathal Smyth, Pascal Poupart, Marcus Brubaker. Time2Vec: Learning a Vector Representation of Time, preprint <b>2019</b></p><p id='Lueckmann2021'>Jan-Matthis  <b>Lueckmann</b>, Jan Boelts, David S Greenberg, David, Pedro J Gonçalves, Jakob H Macke. Benchmarking Simulation-Based Inference. preprint <b>2021</b></p><p id='Rossant2010'>Cyrille <b>Rossant</b>, Dan F. M. Goodman, Jonathan Platkiewicz and Romain Brette. Automatic fitting of spiking neuron models to electrophysiological recordings, Frontiers in Neuroinformatics <b>2010</b>, 4; doi: <a href="https://doi.org/10.3389/neuro.11.002.2010">10.3389/neuro.11.002.2010</a></p><p id='Tejero-Cantero2020'>Alvaro  <b>Tejero-Cantero</b>, Jan Boelts, Michael Deistler, Jan-Matthis Lueckmann, Conor Durkan, Pedro J Goncalves, David S Greenberg, Jakob H Macke. sbi: A toolkit for simulation-based inference, Journal of Open Source Software <b>2020</b>, 5. 2505; doi: <a href="https://doi.org/10.21105/joss.02505">10.21105/joss.02505</a></p>
 </div>
 </div>
 </body>
